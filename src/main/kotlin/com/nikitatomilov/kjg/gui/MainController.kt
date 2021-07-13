@@ -10,6 +10,7 @@ import feign.codec.Decoder
 import javafx.event.ActionEvent
 import javafx.fxml.FXML
 import javafx.scene.control.Button
+import mu.KLogging
 import java.lang.reflect.Type
 
 class MainController {
@@ -30,10 +31,11 @@ class MainController {
 
     val contributors = github.contributors("OpenFeign", "feign")
     for ((login, contributions) in contributors) {
-      println("$login ($contributions)")
+      logger.info { "$login ($contributions)" }
     }
 
     MessageBoxes.showAlert("It Works", "Hello World")
   }
 
+  companion object : KLogging()
 }
