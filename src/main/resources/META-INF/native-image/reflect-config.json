@@ -20,24 +20,24 @@
   "name":"com.fasterxml.jackson.databind.ser.Serializers[]"
 },
 {
-  "name":"com.programmer74.kjg.Main",
+  "name":"com.nikitatomilov.kjg.Main",
   "methods":[
-    {"name":"<init>","parameterTypes":[] },
+    {"name":"<init>","parameterTypes":[] }, 
     {"name":"main","parameterTypes":["java.lang.String[]"] }
   ]
 },
 {
-  "name":"com.programmer74.kjg.api.Contributor",
+  "name":"com.nikitatomilov.kjg.api.Contributor",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allDeclaredConstructors":true
 },
 {
-  "name":"com.programmer74.kjg.api.GitHub",
+  "name":"com.nikitatomilov.kjg.api.GitHub",
   "allPublicMethods":true
 },
 {
-  "name":"com.programmer74.kjg.gui.MainController",
+  "name":"com.nikitatomilov.kjg.gui.MainController",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "methods":[{"name":"<init>","parameterTypes":[] }]
@@ -73,7 +73,7 @@
 {
   "name":"com.sun.prism.GraphicsPipeline",
   "methods":[
-    {"name":"getFontFactory","parameterTypes":[] },
+    {"name":"getFontFactory","parameterTypes":[] }, 
     {"name":"getPipeline","parameterTypes":[] }
   ]
 },
@@ -119,11 +119,26 @@
 },
 {
   "name":"java.lang.Class",
-  "methods":[{"name":"getModule","parameterTypes":[] }]
+  "methods":[
+    {"name":"forName","parameterTypes":["java.lang.Module","java.lang.String"] }, 
+    {"name":"getModule","parameterTypes":[] }
+  ]
 },
 {
   "name":"java.lang.Module",
-  "methods":[{"name":"getResourceAsStream","parameterTypes":["java.lang.String"] }]
+  "methods":[
+    {"name":"getDescriptor","parameterTypes":[] }, 
+    {"name":"getLayer","parameterTypes":[] }, 
+    {"name":"getName","parameterTypes":[] }, 
+    {"name":"getResourceAsStream","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"java.lang.ModuleLayer",
+  "methods":[
+    {"name":"boot","parameterTypes":[] }, 
+    {"name":"findModule","parameterTypes":["java.lang.String"] }
+  ]
 },
 {
   "name":"java.lang.Object"

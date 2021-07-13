@@ -1,4 +1,4 @@
-package com.programmer74.kjg.api
+package com.nikitatomilov.kjg.api
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import feign.Param

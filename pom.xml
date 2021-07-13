@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>kotlin-javafx-graalvm</artifactId>
-    <groupId>com.programmer74</groupId>
+    <groupId>com.nikitatomilov</groupId>
     <version>0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>kotlin-javafx-graalvm</name>
 
     <properties>
-        <main.class>com.programmer74.kjg.Main</main.class>
+        <main.class>com.nikitatomilov.kjg.Main</main.class>
         <kotlin.version>1.3.72</kotlin.version>
         <maven.compiler.release>11</maven.compiler.release>
         <javafx.version>11.0.2</javafx.version>

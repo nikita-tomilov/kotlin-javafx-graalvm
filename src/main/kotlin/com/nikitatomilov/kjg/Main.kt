@@ -1,4 +1,4 @@
-package com.programmer74.kjg
+package com.nikitatomilov.kjg
 
 import javafx.application.Application
 import javafx.fxml.FXMLLoader

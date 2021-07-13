@@ -1,4 +1,4 @@
-package com.programmer74.kjg.util
+package com.nikitatomilov.kjg.util
 
 import javafx.application.Platform
 import javafx.scene.control.Alert
