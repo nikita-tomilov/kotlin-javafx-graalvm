@@ -37,7 +37,11 @@
   "allPublicMethods":true
 },
 {
-  "name":"com.nikitatomilov.kjg.gui.MainController",
+  "name":"com.nikitatomilov.kjg.gui.HelloWorld",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.nikitatomilov.kjg.gui.MainView",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "methods":[{"name":"<init>","parameterTypes":[] }]
@@ -423,5 +427,20 @@
 {
   "name":"sun.security.x509.SubjectKeyIdentifierExtension",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Boolean","java.lang.Object"] }]
+},
+{
+  "name":"tornadofx.Component",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"tornadofx.UIComponent",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"tornadofx.View",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
 }
 ]

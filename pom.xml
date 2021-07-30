@@ -101,6 +101,20 @@
             <groupId>no.tornado</groupId>
             <artifactId>tornadofx</artifactId>
             <version>1.7.20</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.osgi</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.eclipse.osgi</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>no.tornado</groupId>
+                    <artifactId>osgi-live-bundle-reload</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!-- feign -->
         <dependency>
@@ -286,7 +300,7 @@
                     <reflectionList></reflectionList>
                     <jniList></jniList>
                     <attachList></attachList>
-                    <nativeImageArgs></nativeImageArgs>
+                    <nativeImageArgs>--allow-incomplete-classpath</nativeImageArgs>
                     <runtimeArgs></runtimeArgs>
                     <verbose>false</verbose>
                     <enableSWRendering>false</enableSWRendering>
