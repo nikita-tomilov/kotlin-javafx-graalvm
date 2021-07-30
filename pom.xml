@@ -96,6 +96,12 @@
             <artifactId>kotlin-stdlib-jdk8</artifactId>
             <version>${kotlin.version}</version>
         </dependency>
+        <!-- tornadofx just for lulz -->
+        <dependency>
+            <groupId>no.tornado</groupId>
+            <artifactId>tornadofx</artifactId>
+            <version>1.7.20</version>
+        </dependency>
         <!-- feign -->
         <dependency>
             <groupId>io.github.openfeign</groupId>

@@ -3,20 +3,22 @@ package com.nikitatomilov.kjg.gui
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 import com.nikitatomilov.kjg.api.GitHub
-import com.nikitatomilov.kjg.util.MessageBoxes
 import feign.Feign
 import feign.jackson.JacksonDecoder
 import javafx.event.ActionEvent
-import javafx.fxml.FXML
 import javafx.scene.control.Button
+import javafx.scene.layout.AnchorPane
 import mu.KLogging
+import tornadofx.View
+import tornadofx.hbox
+import tornadofx.label
 
-class MainController {
+class MainView : View() {
 
-  @FXML
-  lateinit var cmdHelloWorld: Button
+  override val root: AnchorPane by fxml("/fxml/main.fxml")
 
-  @FXML
+  private val cmdHelloWorld: Button by fxid()
+
   fun helloWorldPressed(event: ActionEvent?) {
     val github = Feign.builder()
         .decoder(JacksonDecoder(ObjectMapper().registerKotlinModule()))
@@ -27,8 +29,17 @@ class MainController {
       logger.info { "$login ($contributions)" }
     }
 
-    MessageBoxes.showAlert("It Works", "Hello World")
+    logger.info { cmdHelloWorld.text }
+
+    //MessageBoxes.showAlert("It Works", "Hello World")
+    find<HelloWorld>().openWindow()
   }
 
   companion object : KLogging()
+}
+
+class HelloWorld : View() {
+  override val root = hbox {
+    label("Hello world")
+  }
 }
