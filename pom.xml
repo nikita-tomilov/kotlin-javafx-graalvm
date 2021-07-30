@@ -317,5 +317,13 @@
         </plugins>
     </build>
 
+    <profiles>
+        <profile>
+            <id>android</id>
+            <properties>
+                <gluonfx.target>android</gluonfx.target>
+            </properties>
+        </profile>
+    </profiles>
 
 </project>
