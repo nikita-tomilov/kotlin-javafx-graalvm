@@ -8,10 +8,9 @@ import feign.jackson.JacksonDecoder
 import javafx.event.ActionEvent
 import javafx.scene.control.Button
 import javafx.scene.layout.AnchorPane
+import javafx.scene.web.WebView
 import mu.KLogging
-import tornadofx.View
-import tornadofx.hbox
-import tornadofx.label
+import tornadofx.*
 
 class MainView : View() {
 
@@ -39,7 +38,19 @@ class MainView : View() {
 }
 
 class HelloWorld : View() {
+
+  private var wv: WebView by singleAssign()
+
   override val root = hbox {
     label("Hello world")
+    wv = webview()
+    button("kek") {
+      action {
+        logger.info { "kek in progress" }
+        wv.engine.load("https://google.ru/")
+      }
+    }
   }
+
+  companion object : KLogging()
 }
