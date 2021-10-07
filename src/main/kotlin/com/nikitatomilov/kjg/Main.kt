@@ -1,21 +1,9 @@
 package com.nikitatomilov.kjg
 
-import javafx.application.Application
-import javafx.fxml.FXMLLoader
-import javafx.scene.Parent
-import javafx.scene.Scene
-import javafx.stage.Stage
+import com.nikitatomilov.kjg.gui.MainView
+import tornadofx.App
 
-class Main : Application() {
-
-  override fun start(s: Stage) {
-    val fxmlFile = "/fxml/main.fxml"
-    val loader = FXMLLoader()
-    val root = loader.load<Parent>(javaClass.getResourceAsStream(fxmlFile))
-    s.scene = Scene(root)
-    s.title = "Hello World"
-    s.show()
-  }
+class Main : App(MainView::class) {
 
   companion object {
     @JvmStatic

@@ -37,7 +37,11 @@
   "allPublicMethods":true
 },
 {
-  "name":"com.nikitatomilov.kjg.gui.MainController",
+  "name":"com.nikitatomilov.kjg.gui.HelloWorld",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"com.nikitatomilov.kjg.gui.MainView",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "methods":[{"name":"<init>","parameterTypes":[] }]
@@ -86,10 +90,6 @@
   "methods":[{"name":"loadShader","parameterTypes":["com.sun.prism.ps.ShaderFactory","java.io.InputStream"] }]
 },
 {
-  "name":"com.sun.prism.shader.FillPgram_LinearGradient_PAD_Loader",
-  "methods":[{"name":"loadShader","parameterTypes":["com.sun.prism.ps.ShaderFactory","java.io.InputStream"] }]
-},
-{
   "name":"com.sun.prism.shader.Solid_TextureFirstPassLCD_Loader",
   "methods":[{"name":"loadShader","parameterTypes":["com.sun.prism.ps.ShaderFactory","java.io.InputStream"] }]
 },
@@ -119,26 +119,11 @@
 },
 {
   "name":"java.lang.Class",
-  "methods":[
-    {"name":"forName","parameterTypes":["java.lang.Module","java.lang.String"] }, 
-    {"name":"getModule","parameterTypes":[] }
-  ]
+  "methods":[{"name":"getModule","parameterTypes":[] }]
 },
 {
   "name":"java.lang.Module",
-  "methods":[
-    {"name":"getDescriptor","parameterTypes":[] }, 
-    {"name":"getLayer","parameterTypes":[] }, 
-    {"name":"getName","parameterTypes":[] }, 
-    {"name":"getResourceAsStream","parameterTypes":["java.lang.String"] }
-  ]
-},
-{
-  "name":"java.lang.ModuleLayer",
-  "methods":[
-    {"name":"boot","parameterTypes":[] }, 
-    {"name":"findModule","parameterTypes":["java.lang.String"] }
-  ]
+  "methods":[{"name":"getResourceAsStream","parameterTypes":["java.lang.String"] }]
 },
 {
   "name":"java.lang.Object"
@@ -228,9 +213,6 @@
 },
 {
   "name":"javafx.scene.image.Image"
-},
-{
-  "name":"javafx.scene.image.ImageView"
 },
 {
   "name":"javafx.scene.layout.AnchorPane",
@@ -423,5 +405,20 @@
 {
   "name":"sun.security.x509.SubjectKeyIdentifierExtension",
   "methods":[{"name":"<init>","parameterTypes":["java.lang.Boolean","java.lang.Object"] }]
+},
+{
+  "name":"tornadofx.Component",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"tornadofx.UIComponent",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"tornadofx.View",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
 }
 ]
